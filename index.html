@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods Search</title>
+</head>
+<body>
+    <h2>Search Goods</h2>
+    <form id="search-form">
+        <label>
+            <input type="radio" name="search-criteria" value="product_name" checked>
+            Product Name
+        </label>
+        <label>
+            <input type="radio" name="search-criteria" value="product_description">
+            Product Description
+        </label>
+        <label>
+            <input type="radio" name="search-criteria" value="product_price">
+            Product Price
+        </label>
+        <label>
+            <input type="radio" name="search-criteria" value="store_name">
+            Store Name
+        </label>
+        <label>
+            <input type="radio" name="search-criteria" value="store_address">
+            Store Address
+        </label>
+        <br><br>
+        <input type="text" id="search-input" placeholder="Enter search value">
+        <button type="button" id="search-button">Search</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
